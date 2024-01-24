@@ -4,35 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
     <title>QUICHAT | Quick Chat to other</title>
 </head>
 
 <body>
     <header>
-        <h3>Quick Chat</h3>
+        <h2>Quick Chat</h2>
+        <p><em>Send your message to other without save their number</em></p>
     </header>
-    
+
     <main>
-        <form>
-            <div class="chat-area">
-                <div class="phone-number">
+        <div class="chat-area">
+            <div class="phone-number">
+                <div class="row-25">
                     <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" placeholder="Message Phone Number" maxlength="13" />
                 </div>
-                <div class="text-message">
-                    <label for="message">Message</label>
-                    <input type="textarea" id="message" placeholder="Enter Message" />
-                </div>
-                <div class="btn">
-                    <button>Send Message</button>
+                <div class="row-75">
+                    <input type="text" id="phone-area" value="+62" readonly />
+                    <input type="text" id="phone" placeholder="Phone Number" maxlength="12" />
                 </div>
             </div>
-        </form>
+            <div class="text-message">
+                <div class="row-25">
+                    <label for="message">Message</label>
+                </div>
+                <div class="row-75">
+                    <textarea id="message" placeholder="Enter Message" rows="10" cols="26"></textarea>
+                </div>
+            </div>
+            <div class="btn">
+                <button onclick="sendMessage()">Send Message</button>
+            </div>
+        </div>
     </main>
-    
-    <footer>
 
+    <footer>
+        <p class="copyright"> Copyrights &copy
+            <span id="copyright-year"></span> <a href="https://cabozira.com" target="_blank">cabozira.</a> All rights
+            reserved.
+        </p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
