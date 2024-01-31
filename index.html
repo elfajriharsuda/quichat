@@ -5,15 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>QUICHAT | Quick Chat to other</title>
 </head>
 
 <body>
     <header>
-        <h2>Quick Chat</h2>
-        <p><em>Send your message to other without save their number</em></p>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="assets/logo.png" alt="logo" width="130px" height="30px">
+            </div>
+            <div class="header-title">
+                <h2>Quick Chat</h2>
+                <p>Send your message to people in the World without save their number</p>
+            </div>
+            <div class="header-navigation">
+                <nav>
+                    <a href="https://elfajriharsuda.github.io">
+                        <button class="btn-home"><i class="fa fa-home"></i> HOME</button>
+                    </a>
+                </nav>
+            </div>
+        </div>
     </header>
-
     <main>
         <div class="chat-area">
             <div class="phone-number">
@@ -21,7 +35,9 @@
                     <label for="phone">Phone Number</label>
                 </div>
                 <div class="row-75">
-                    <input type="text" id="phone-area" value="+62" readonly />
+                    <select id="phone-area">
+                    </select>
+                    <input type="text" id="phone-area-input" value="" readonly hidden>
                     <input type="text" id="phone" name="phone" placeholder="Phone Number">
                 </div>
             </div>
@@ -30,7 +46,7 @@
                     <label for="message">Message</label>
                 </div>
                 <div class="row-75">
-                    <textarea id="message" placeholder="Enter Message" rows="10" cols="26"></textarea>
+                    <textarea id="message" placeholder="Enter Message" rows="10" cols="42"></textarea>
                 </div>
             </div>
             <div class="btn">
@@ -38,12 +54,16 @@
             </div>
         </div>
     </main>
-
     <footer>
-        <p class="copyright"> Copyrights &copy
-            <span id="copyright-year"></span> <a href="https://www.linkedin.com/in/elfajriharsuda/"
-            target="_blank">elfajriharsuda.</a> All rights reserved.
-        </p>
+        <div class="footer-logo">
+            <img src="assets/logo-footer.png" alt="logo" width="160px" height="38px">
+        </div>
+        <div class="copyright">
+            <p> Copyrights &copy
+                <span id="copyright-year"></span> <a href="https://www.linkedin.com/in/elfajriharsuda/"
+                    target="_blank">elfajriharsuda.</a> All rights reserved.
+            </p>
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
