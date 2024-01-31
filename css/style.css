@@ -63,7 +63,7 @@ main {
 .chat-area {
     display: inline-block;
     align-items: center;
-    padding-top: 10%;    
+    padding-top: 6%;    
 }
 
 input, textarea, select, option, label {
